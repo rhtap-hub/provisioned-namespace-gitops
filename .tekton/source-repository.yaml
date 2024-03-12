@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: provisioned-namespace-repository
+spec:
+  url: https://github.com/rhtap-hub/provisioned-namespace

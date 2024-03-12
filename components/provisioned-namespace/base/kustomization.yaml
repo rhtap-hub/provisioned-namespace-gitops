@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: provisioned-namespace
+  janus-idp.io/tekton: provisioned-namespace
+  backstage.io/kubernetes-id: provisioned-namespace
+  backstage.io/kubernetes-namespace: provisioned-namespace 
+  app.kubernetes.io/part-of: provisioned-namespace
+resources: 
+- deployment.yaml
+- route.yaml
+- service.yaml
